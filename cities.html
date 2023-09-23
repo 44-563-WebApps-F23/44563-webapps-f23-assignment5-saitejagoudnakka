@@ -16,6 +16,27 @@
         width: 400px;
         height: 500px;
       }
+      .table{
+        border: solid 3px black;
+        margin: auto;
+        text-align: left;
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      td:hover{
+        background-color: rgb(199, 199, 194);
+      }
+      .table th{
+        background-color: palegreen;
+      }
+      table, th, td {
+      border: 1px solid;
+      }
+      .table td{
+        background-color: rgb(255, 255, 255);
+      }
+      
+      
     </style>
 </head>
 <body>
@@ -32,11 +53,12 @@
         </div>
           <div class="row">
             <div class="col-md">Nagasaki</div>
-            <div class="col-md">Kansas</div>
             <div class="col-md">Austin</div>
+            <div class="col-md">Kansas</div>
+            <div class="col-md">Kentucky</div>
             <div class="col-md">Amsterdam</div>
             <div class="col-md">SanAntonio</div>
-            <div class="col-md">Kentucky</div>
+            
         </div>
       </div>
 city names row brakes first. Rows "break" when resizing a 
@@ -52,6 +74,65 @@ Properly designed responsive websites will adjust their layout.
   <img src="nagasaki.jpeg" class="img-thumbnail" alt="nagasaki">
   <img src="austin.jpg" class="img-thumbnail" alt="austin">
 </div>
+<table class="table">
+  <caption>CITY,TREES AND LAKES</caption>
+  <thead>
+  <tr>
+  <th scope="col">#</th>
+  <th scope="col">Letter</th>
+  <th scope="col">City</th>
+  <th scope="col">River</th>
+  <th scope="col">Tree</th>
+  <tbody></tbody>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td scope="row">1</th>
+    <td>N</td>
+    <td>Nagasaki</td>
+    <td>Nile</td>
+    <td>Nectarine Tree</td>
+  </tr>
+  <tr>
+  <td scope="row">2</th>
+  <td>A</td>
+  <td>Austin</td>
+  <td>Alakananda</td>
+  <td>Amla</td>
+  </tr>
+  <tr>
+    <td scope="row">3</th>
+    <td>K</td>
+    <td>Kansas</td>
+    <td>Krishna</td>
+    <td>Karela</td>
+  </tr>
+  <tr>
+    <td scope="row">4</th>
+    <td>K</td>
+    <td>Kentucky</td>
+    <td>Kenai</td>
+    <td>Kapur</td>
+  </tr>
+  <tr>
+    <td scope="row">5</th>
+    <td>A</td>
+    <td>Amsterdam</td>
+    <td>Alabama</td>
+    <td>Apple </td>
+  </tr>
+  <tr>
+    <td scope="row">6</th>
+    <td>S</td>
+    <td>SanAntonio</td>
+    <td>Saraswati</td>
+    <td>The Saguaro </td>
+  </tr>
+  
+  
+</tbody>
+</table>
 
 
 
